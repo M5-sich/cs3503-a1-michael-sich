@@ -31,9 +31,20 @@ For comparisons, instead of parsing pairs from a text file, I just hardcoded the
   - `sub_tests.txt` – all tests for `sub_convert`
   - `print_tests.txt` – all tests for `print_tables`
 
+## Transparency Note
+
+For this assignment I used outside resources to help me learn and finish the project.
+
+- I used **W3Schools** to look up basic C concepts and syntax whenever I got stuck.
+- I also used **AI assistance** to help me understand how to structure parts of my code, how to organize my test files, and to help me write this README in a way that explains my work clearly.
+
+I tried my best to take what I learned from these resources and actually apply it myself instead of just copying. The goal for me was to get a firm grasp on C programming and build confidence step by step. This README also reflects my process, struggles, and how I worked through the assignment.
+
 ## How to build and run
 
 To compile:
+
+To build and run this program you need gcc installed. On Mac or Linux, open a terminal, cd into the A1 folder, then run `gcc -o a1 main.c convert.c` to compile and `./a1` to run (the `./` is required). On Windows, open Command Prompt or PowerShell, cd into the A1 folder, run `gcc -o a1.exe main.c convert.c` to compile, and then just type `a1.exe` to run (no `./` needed). After running, the program will go through division tests, subtraction tests, comparison tests, and print tables tests automatically.
 
 ```bash
 gcc -o a1 main.c convert.c

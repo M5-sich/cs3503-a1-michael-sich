@@ -54,5 +54,6 @@ To build and run this program you need gcc installed. On Mac or Linux, open a te
 ```bash
 gcc -o a1 main.c convert.c
 
-Repo: https://github.com/M5-sich/cs3503-a1-michael-sich
 ```
+
+Repo: https://github.com/M5-sich/cs3503-a1-michael-sich

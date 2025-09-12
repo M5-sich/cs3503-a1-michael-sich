@@ -20,6 +20,11 @@ At first I tried making one huge test file (`A1_tests.txt`) but parsing it was t
 
 For comparisons, instead of parsing pairs from a text file, I just hardcoded them in a function. It’s way simpler and I didn’t want to overcomplicate things (I understand this may cost me some points).
 
+## what to expect when running
+
+when you run `./a1` the program shows a menu like this:
+menu: 1. run division tests 2. run subtraction tests 3. run comparison tests 4. run print_tables tests 5. convert any number
+
 ## File structure
 
 - **convert.c** – all the function implementations (`div_convert`, `sub_convert`, `print_tables`)

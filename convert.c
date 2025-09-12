@@ -6,13 +6,15 @@ void div_convert(uint32_t n, int base, char *out){
 
 	int arraySize = 2; // the array will always have at least one digit plus '\0'
 
+
+	//this function calculates the product of a number with itself x many times (i.e., exponentiation)  
 	uint32_t temp = n;
 	while (temp / base != 0) {
 			temp = temp / base;
 			arraySize++;
 	}
 
-	out[arraySize - 1] = '\0';
+	out[arraySize - 1] = '\0'; //leaving last index for '\0' since the output will ultimatly be a string
 
 	for (int i = arraySize - 2; i >= 0; i--){
 		int remainder = n % base;
@@ -49,21 +51,22 @@ void div_convert(uint32_t n, int base, char *out){
 void sub_convert(uint32_t n, int base, char *out){
 
 	uint32_t arraySize = 2; // the array will always have at least one digit plus '\0'
-    int exponent = 0;
-    uint32_t power = 1;        
+	int exponent = 0;
+	uint32_t power = 1;        
 
-    while (power * (uint32_t)base <= n) {
-        power *= (uint32_t)base;  
-        exponent++;               
-        arraySize++;        
-    }
+	while (power * (uint32_t)base <= n) {
+			power *= (uint32_t)base;  
+			exponent++;               
+			arraySize++;        
+	}
 
-	out[arraySize - 1] = '\0';
+	out[arraySize - 1] = '\0'; //leaving last index for '\0' since the output will ultimatly be a string
 
-    while(exponent>=0){
-        int number_of_factors = n/power;
-        
-        switch (number_of_factors){
+	while(exponent>=0){
+		
+		int number_of_factors = n/power;
+
+		switch (number_of_factors){
 			case 10:
 				out[(arraySize-2)-exponent] = 'A';
 				break;
@@ -91,7 +94,7 @@ void sub_convert(uint32_t n, int base, char *out){
         n %= power;
         power /= (uint32_t)base;
         exponent--;
-    }
+  }
 }
 
 

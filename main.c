@@ -170,68 +170,68 @@ void run_comparison_tests() {
 
 int main() {
 
-    run_division_tests("separated_tests/div_tests.txt");
-    run_subtraction_tests("separated_tests/sub_tests.txt");
-    run_comparison_tests();
-    run_print_tables_tests("separated_tests/print_tests.txt");
-    return 0;
+    // run_division_tests("separated_tests/div_tests.txt");
+    // run_subtraction_tests("separated_tests/sub_tests.txt");
+    // run_comparison_tests();
+    // run_print_tables_tests("separated_tests/print_tests.txt");
+    // return 0;
     
-    // int choice;
+    int choice;
 
-    // printf("menu:\n");
-    // printf("  1) run division tests\n");
-    // printf("  2) run subtraction tests\n");
-    // printf("  3) run comparison tests\n");
-    // printf("  4) run print_tables tests\n");
-    // printf("  5) convert any number\n");
-    // printf("enter choice: ");
-    // scanf("%d", &choice);
+    printf("menu:\n");
+    printf("  1) run division tests\n");
+    printf("  2) run subtraction tests\n");
+    printf("  3) run comparison tests\n");
+    printf("  4) run print_tables tests\n");
+    printf("  5) convert any number\n");
+    printf("enter choice: ");
+    scanf("%d", &choice);
 
-    // switch (choice) {
-    //     case 1:
-    //         printf("you picked division tests\n");
-    //         run_division_tests("separated_tests/div_tests.txt");
-    //         break;
-    //     case 2:
-    //         printf("you picked subtraction tests\n");
-    //         run_subtraction_tests("separated_tests/sub_tests.txt");
-    //         break;
-    //     case 3:
-    //         printf("you picked comparison tests\n");
-    //         run_comparison_tests();   // if yours doesn’t take a file
-    //         break;
-    //     case 4:
-    //         printf("you picked print_tables tests\n");
-    //         run_print_tables_tests("separated_tests/print_tests.txt");
-    //         break;
-    //     case 5:
+    switch (choice) {
+        case 1:
+            printf("you picked division tests\n");
+            run_division_tests("separated_tests/div_tests.txt");
+            break;
+        case 2:
+            printf("you picked subtraction tests\n");
+            run_subtraction_tests("separated_tests/sub_tests.txt");
+            break;
+        case 3:
+            printf("you picked comparison tests\n");
+            run_comparison_tests();   // if yours doesn’t take a file
+            break;
+        case 4:
+            printf("you picked print_tables tests\n");
+            run_print_tables_tests("separated_tests/print_tests.txt");
+            break;
+        case 5:
             
-    //         printf("you picked convert any number\n");
-    //         printf("i will convert a decimal you pick into base 2..16\n");
+            printf("you picked convert any number\n");
+            printf("i will convert a decimal you pick into base 2..16\n");
 
-    //         /* ask for inputs */
-    //         uint32_t number;
-    //         int base;
-    //         char out[70];
+            /* ask for inputs */
+            uint32_t number;
+            int base;
+            char out[70];
 
-    //         printf("enter a decimal number (0..4294967295): ");
-    //         scanf("%u", &number);
+            printf("enter a decimal number (0..4294967295): ");
+            scanf("%u", &number);
 
-    //         printf("enter a base (2..16): ");
-    //         scanf("%d", &base);
+            printf("enter a base (2..16): ");
+            scanf("%d", &base);
 
-    //         /* do the convert with the division version (either method is fine) */
-    //         div_convert(number, base, out);
+            /* do the convert with the division version (either method is fine) */
+            div_convert(number, base, out);
 
             
-    //         printf("div_convert(%u, %d) -> %s\n", number, base, out);
-    //         break;
+            printf("div_convert(%u, %d) -> %s\n", number, base, out);
+            break;
 
            
-    //     default:
-    //         printf("invalid input\n");
-    //         break;
-    // }
+        default:
+            printf("invalid input\n");
+            break;
+    }
     
-    // return 0;
+    return 0;
 }

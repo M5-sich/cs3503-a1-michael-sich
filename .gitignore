@@ -1,0 +1,16 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore compiled binaries
+a1
+*.out
+*.exe
+
+# Ignore object files
+*.o
+
+# Ignore debug symbol files
+*.dSYM/
+
+# Ignore temporary files
+*~
